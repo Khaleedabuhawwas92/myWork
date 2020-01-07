@@ -1,0 +1,1059 @@
+/*Start Main Rulez*/
+
+* {
+    box-sizing: border-box
+}
+::selection {
+    background-color: #222;
+    color: white;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    perspective: 2000px;
+   
+}
+
+.contener {
+    width: 1170px;
+    margin: auto;
+    overflow: hidden;
+}
+
+h2 {
+    text-transform: uppercase
+}
+
+/*End Main Rulez*/
+
+/*Start Header*/
+
+header .sidebar {
+    background-color: #FFF;
+    height: 600px;
+    background-image: url('../image/learn.jpg');
+    background-size: cover
+}
+
+header .sidebar .intro {
+    padding-top: 200px;
+    height: 600px;
+    text-align: center;
+}
+
+header .sidebar .intro h2 {
+    margin: 0 auto;
+    color: #fff;
+    font-size: 50px;
+    width: 700px;
+    border-top: 4px solid #fff;
+    border-bottom: 4px solid #fff;
+    padding: 5px 0;
+}
+
+header .sidebar .intro button {
+    background: none;
+    color: #fff;
+    margin-top: 30px;
+    font-size: 20px;
+    border: 2px solid #fff;
+    font-weight: bold;
+    padding: 10px 30px;
+    cursor: pointer;
+    text-transform: uppercase
+}
+
+header .sidebar .intro button:hover {
+    opacity: .5;
+    background-color: #fff;
+    color: #191e22
+}
+
+header nav {
+    background-color: #252F31;
+    color: #FFF;
+    z-index: 3;
+    position: relative;
+}
+
+header nav .contener {
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav .contener ul {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+header nav .contener ul li {
+    padding:10px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-family: geneva;
+    margin:auto;
+    font-weight: bold;   
+}
+
+header nav .contener ul li a {
+    color: #fff;
+    text-decoration: none
+}
+
+header nav .contener ul li.active a, header nav .contener ul li a:hover {
+    color: #30b576
+}
+
+header nav .contener h2 {
+    padding: 5px;
+    text-transform: uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    -webkit-animation: text-flicker-in-glow 4s linear both;
+    animation: text-flicker-in-glow 4s linear both;
+}
+
+header nav .contener h2 span {
+    color: #2ecc71;
+}
+
+/* ----------------------------------------------
+ *              Created By
+ * 
+ *            Khalid abu hawwas
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation text-flicker-in-glow
+ * ----------------------------------------
+ */
+
+@-webkit-keyframes text-flicker-in-glow {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 0;
+        text-shadow: none;
+    }
+    10.1% {
+        opacity: 1;
+        text-shadow: none;
+    }
+    10.2% {
+        opacity: 0;
+        text-shadow: none;
+    }
+    20% {
+        opacity: 0;
+        text-shadow: none;
+    }
+    20.1% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.25);
+    }
+    20.6% {
+        opacity: 0;
+        text-shadow: none;
+    }
+    30% {
+        opacity: 0;
+        text-shadow: none;
+    }
+    30.1% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
+    }
+    30.5% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
+    }
+    30.6% {
+        opacity: 0;
+        text-shadow: none;
+    }
+    45% {
+        opacity: 0;
+        text-shadow: none;
+    }
+    45.1% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
+    }
+    50% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
+    }
+    55% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
+    }
+    55.1% {
+        opacity: 0;
+        text-shadow: none;
+    }
+    57% {
+        opacity: 0;
+        text-shadow: none;
+    }
+    57.1% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35);
+    }
+    60% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35);
+    }
+    60.1% {
+        opacity: 0;
+        text-shadow: none;
+    }
+    65% {
+        opacity: 0;
+        text-shadow: none;
+    }
+    65.1% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35), 0 0 100px rgba(255, 255, 255, 0.1);
+    }
+    75% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35), 0 0 100px rgba(255, 255, 255, 0.1);
+    }
+    75.1% {
+        opacity: 0;
+        text-shadow: none;
+    }
+    77% {
+        opacity: 0;
+        text-shadow: none;
+    }
+    77.1% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.4), 0 0 110px rgba(255, 255, 255, 0.2), 0 0 100px rgba(255, 255, 255, 0.1);
+    }
+    85% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.4), 0 0 110px rgba(255, 255, 255, 0.2), 0 0 100px rgba(255, 255, 255, 0.1);
+    }
+    85.1% {
+        opacity: 0;
+        text-shadow: none;
+    }
+    86% {
+        opacity: 0;
+        text-shadow: none;
+    }
+    86.1% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.6), 0 0 60px rgba(255, 255, 255, 0.45), 0 0 110px rgba(255, 255, 255, 0.25), 0 0 100px rgba(255, 255, 255, 0.1);
+    }
+    100% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.6), 0 0 60px rgba(255, 255, 255, 0.45), 0 0 110px rgba(255, 255, 255, 0.25), 0 0 100px rgba(255, 255, 255, 0.1);
+    }
+}
+
+@keyframes text-flicker-in-glow {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 0;
+        text-shadow: none;
+    }
+    10.1% {
+        opacity: 1;
+        text-shadow: none;
+    }
+    10.2% {
+        opacity: 0;
+        text-shadow: none;
+    }
+    20% {
+        opacity: 0;
+        text-shadow: none;
+    }
+    20.1% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.25);
+    }
+    20.6% {
+        opacity: 0;
+        text-shadow: none;
+    }
+    30% {
+        opacity: 0;
+        text-shadow: none;
+    }
+    30.1% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
+    }
+    30.5% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
+    }
+    30.6% {
+        opacity: 0;
+        text-shadow: none;
+    }
+    45% {
+        opacity: 0;
+        text-shadow: none;
+    }
+    45.1% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
+    }
+    50% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
+    }
+    55% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
+    }
+    55.1% {
+        opacity: 0;
+        text-shadow: none;
+    }
+    57% {
+        opacity: 0;
+        text-shadow: none;
+    }
+    57.1% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35);
+    }
+    60% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35);
+    }
+    60.1% {
+        opacity: 0;
+        text-shadow: none;
+    }
+    65% {
+        opacity: 0;
+        text-shadow: none;
+    }
+    65.1% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35), 0 0 100px rgba(255, 255, 255, 0.1);
+    }
+    75% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35), 0 0 100px rgba(255, 255, 255, 0.1);
+    }
+    75.1% {
+        opacity: 0;
+        text-shadow: none;
+    }
+    77% {
+        opacity: 0;
+        text-shadow: none;
+    }
+    77.1% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.4), 0 0 110px rgba(255, 255, 255, 0.2), 0 0 100px rgba(255, 255, 255, 0.1);
+    }
+    85% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.4), 0 0 110px rgba(255, 255, 255, 0.2), 0 0 100px rgba(255, 255, 255, 0.1);
+    }
+    85.1% {
+        opacity: 0;
+        text-shadow: none;
+    }
+    86% {
+        opacity: 0;
+        text-shadow: none;
+    }
+    86.1% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.6), 0 0 60px rgba(255, 255, 255, 0.45), 0 0 110px rgba(255, 255, 255, 0.25), 0 0 100px rgba(255, 255, 255, 0.1);
+    }
+    100% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.6), 0 0 60px rgba(255, 255, 255, 0.45), 0 0 110px rgba(255, 255, 255, 0.25), 0 0 100px rgba(255, 255, 255, 0.1);
+    }
+}
+
+/*End Header*/
+
+/* Start features*/
+
+.features {
+    padding-top: 40px;
+    padding-bottom: 50px
+}
+
+.features .contener {
+    display: flex;
+    justify-content: space-around;
+}
+
+.features .contener h2 {
+    color: #888
+}
+
+.features .contener p {
+    line-height: 1.7;
+    color: #D1D1D1;
+}
+
+.features .contener section {
+    min-height: 100px;
+    width: 33.33333%;
+}
+
+/* End features*/
+
+/*Start about me*/
+
+.about-me {
+    background-color: #F2F2F2;
+    overflow: hidden;
+}
+
+.about-me .contener .about-me-flex {
+    display: flex;
+}
+
+.about-me .contener .about-me-flex .image {
+    width: 40%;
+    background-image: url('../image/khalid.jpg');
+    background-size: cover
+}
+
+.about-me .contener .about-me-flex .info {
+    width: 60%;
+    padding: 40px;
+    overflow: hidden;
+}
+
+.about-me .contener .about-me-flex .info h2 {
+    margin: 40px 0 20px 40px;
+    color: #888
+}
+
+.about-me .contener .about-me-flex .info>p {
+    margin: 40px 0 20px 40px;
+    line-height: 1.3
+}
+
+.about-me .contener .about-me-flex .info p:last-of-type {
+    margin-top: 20px
+}
+
+.about-me .contener .about-me-flex .info p {
+    color: #D1D1D1;
+}
+
+.about-me .contener .about-me-flex .info h3 {
+    color: #888
+}
+
+.about-me .contener .about-me-flex .info .hoibbes {
+    overflow: hidden;
+    margin: 10px 0 0px 40px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.about-me .contener .about-me-flex .info .hoibbes .content {
+    display: flex
+}
+
+.about-me .contener .about-me-flex .info .hoibbes .icon img {
+    width: 30px;
+    padding-top: 15px;
+    padding-right: 5px;
+}
+
+.about-me .contener .about-me-flex .info .hoibbes>div {
+    width: 50%;
+}
+
+/*End about me*/
+
+/*Start My Skilles*/
+
+.my-skilles {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.my-skilles .my-skalles-flex {
+    display: flex
+}
+
+.my-skilles .my-skalles-flex .skilles h2 {
+    margin: 40px 0 20px 40px;
+    color: #888
+}
+
+.my-skilles .my-skalles-flex .skilles p {
+    margin: 40px 0 20px 40px;
+    word-wrap: break-word;
+    color: #D1D1D1;
+    line-height: 1.6;
+    text-transform: capitalize
+}
+
+.my-skilles .my-skalles-flex .skilles button {
+    background: none;
+    padding: 10px 15px;
+    border: 3px solid #2ecc71;
+    color: #2ecc71;
+    font-size: 10px;
+    text-transform: uppercase;
+    margin: 20px 0 0 40px;
+    font-weight: bold
+}
+
+.my-skilles .my-skalles-flex .skilles button:hover {
+    opacity: .5;
+    background-color: #2ecc71;
+    color: #FFF;
+    cursor: pointer;
+    transition: opacity.5s ease-in-out
+}
+
+.my-skilles .skilles, .my-skilles .progress {
+    width: 50%;
+    min-height: 300px
+}
+
+.my-skilles .skilles, .my-skilles .progress .technique {
+    margin-left: 20px;
+    overflow: hidden;
+}
+
+.my-skilles .skilles, .my-skilles .progress .technique h3 {
+    color: #888
+}
+
+my-skilles .skilles, .my-skilles .progress .technique div {
+    background-color: #f2f2f2;
+    height: 25px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+my-skilles .skilles, .my-skilles .progress .technique div span {
+    background-color: #2ecc71;
+    height: 25px;
+    display: block;
+    line-height: 25px;
+    text-align: right;
+    color: #fff;
+    font-weight: 600;
+    -webkit-animation: text-pop-up-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: text-pop-up-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+/* ----------------------------------------------
+ *              Created By
+ * 
+ *            Khalid abu hawwas
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation text-pop-up-top
+ * ----------------------------------------
+ */
+
+@-webkit-keyframes text-pop-up-top {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+    }
+    100% {
+        -webkit-transform: translateX(-50px);
+        transform: translateX(-50px);
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+    }
+}
+
+@keyframes text-pop-up-top {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+    }
+    100% {
+        -webkit-transform: translateX(-50px);
+        transform: translateX(-50px);
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+    }
+}
+
+/*End My Skilles*/
+
+/*Start resume*/
+
+.resume {
+    background-color: #f2f2f2;
+    padding-top: 50px;
+    padding-bottom: 70px;
+    text-align: center
+}
+
+.resume h2 {
+    color: #888
+}
+
+.resume p {
+    line-height: 1.8;
+    color: #D1D1D1
+}
+
+.resume button {
+    background: none;
+    padding: 10px 15px;
+    border: 3px solid #2ecc71;
+    color: #2ecc71;
+    font-size: 10px;
+    text-transform: uppercase;
+    margin: 20px 0 0 40px;
+    font-weight: bold
+}
+
+.resume button:hover {
+    opacity: .5;
+    background-color: #2ecc71;
+    color: #FFF;
+    cursor: pointer;
+    transition: opacity.5s ease-in-out
+}
+
+/*End resume*/
+
+/*Start My Education*/
+
+.my-education {
+    min-height: 100px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 100%
+}
+
+.my-education-flex {
+    display: flex
+}
+
+.my-education .main {
+    width: 50%;
+    padding-right: 5%
+}
+
+.my-education .exp {
+    width: 45%;
+}
+
+.my-education .main {
+    padding-right: 5%
+}
+
+.my-education .my-education-flex .main h2 {
+    margin: 40px 0 20px 40px;
+    color: #888
+}
+
+.my-education .my-education-flex .main p {
+    margin: 40px 0 20px 40px;
+    word-wrap: break-word;
+    color: #D1D1D1;
+    line-height: 1.6;
+    text-transform: capitalize
+}
+
+.my-education .my-education-flex .exp span {
+    display: block;
+}
+
+.my-education .my-education-flex .exp h3 {
+    margin: 110px 0 12px 0;
+    color: #888;
+    text-transform: uppercase;
+}
+
+.my-education .my-education-flex .exp span {
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    color: #D1D1D1;
+    text-transform: uppercase
+}
+
+.my-education .my-education-flex .exp span:last-of-type {
+    background-color: #2ecc71;
+    padding: 12px;
+    color: #FFF;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 30px
+}
+
+hr {
+    background-color: #D1D1D1;
+    height: 1px;
+    border: 0
+}
+
+.my-education .my-education-flex .exp p {
+    color: #D1D1D1;
+    padding: 0;
+    line-height: 1.7;
+    text-transform: capitalize;
+}
+
+/*End My Education*/
+
+/*Start My Experience*/
+
+.my-experience {
+    min-height: 100px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 100%
+}
+
+.my-experience-flex {
+    display: flex
+}
+
+.my-experience .main {
+    width: 50%;
+    padding-right: 5%
+}
+
+.my-experience .main {
+    padding-right: 5%
+}
+
+.my-experience .my-experience-flex .main h2 {
+    margin: 40px 0 20px 40px;
+    color: #888
+}
+
+.my-experience .my-experience-flex .main p {
+    margin: 40px 0 20px 40px;
+    word-wrap: break-word;
+    color: #D1D1D1;
+    line-height: 1.6;
+    text-transform: capitalize
+}
+
+.my-experience .my-experience-flex .exp {
+    width: 45%;
+}
+
+.my-experience span {
+    display: inline-block
+}
+
+.my-experience .my-experience-flex .exp h3 {
+    margin: 110px 0 12px 0;
+    color: #888;
+    text-transform: uppercase;
+}
+
+.my-experience .my-experience-flex .exp span {
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    color: #D1D1D1;
+    display: block
+}
+
+.my-experience .my-experience-flex .exp span:last-of-type {
+    background-color: #2ecc71;
+    padding: 12px;
+    color: #FFF;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.my-experience .my-experience-flex .exp hr {
+    background-color: #D1D1D1;
+    height: 1px;
+    border: 0
+}
+
+.my-experience .my-experience-flex .exp p {
+    color: #D1D1D1;
+    padding: 0;
+    line-height: 1.7;
+    text-transform: capitalize;
+}
+
+/*End My Experience*/
+
+/*Start Testemonials*/
+
+.testemonials {
+    background-color: #f2f2f2;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    display: flex;
+}
+
+.testemonials p {
+    color: #D1D1D1;
+    line-height: 1.8;
+    font-size: 20px;
+    margin-top: 40px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.testemonials h2 {
+    color: #888;
+    margin-bottom: 50px;
+}
+
+.testemonials ul {
+    align-items: center;
+    list-style: none;
+    padding-left: 0;
+    cursor: pointer;
+}
+
+.testemonials ul li {
+    display: inline-block;
+    border: 2px solid #2ecc71;
+    height: 12px;
+    width: 12px;
+    border-radius: 15px;
+}
+
+.testemonials ul li:hover, .testemonials ul .active {
+    background-color: #2ecc71
+}
+
+/*End Testemonials*/
+
+/*Start Portfolio*/
+
+.portfolio {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    overflow: hidden;
+    text-align: center
+}
+
+.portfolio h2 {
+    color: #888;
+    margin-bottom: 50px;
+}
+
+.portfolio p {
+    color: #D1D1D1;
+    line-height: 1.8;
+    font-size: 20px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.portfolio .our-work {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.portfolio .our-work>div {
+    margin: 15px
+}
+
+.portfolio .our-work>div img {
+    width: 95%;
+}
+
+.portfolio .our-work>div img:hover {
+    -webkit-animation: scale-in-center .5s ease-in both;
+    animation: scale-in-center 2s ease ;  
+}
+
+/* ----------------------------------------------
+*              Created By
+ * 
+ *            Khalid abu hawwas
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation scale-in-center
+ * ----------------------------------------
+ */
+ 
+  @keyframes scale-in-center {
+    form {
+      -webkit-transform:  rotateX(30deg);
+              transform:  rotateX(30deg);
+      opacity: 1;
+    }
+
+   
+    to {
+      -webkit-transform: rotateX(360deg);
+              transform:  rotateX(360deg);
+      opacity: 1;
+    }
+  }
+  
+
+/*End Portfolio*/
+
+/*Start Contact me*/
+
+.contact {
+    background-color: #252F31;
+}
+
+.contact .contener {
+    display: flex;
+}
+
+.contact .info {
+    width: 50%;
+    margin: 50px 0 40px 40px;
+    padding-right: 5%
+}
+
+.contact .info h2 {
+    color: #FFF;
+}
+
+.contact .info P {
+    color: #6a6e71;
+    margin-left: 40px;
+    line-height: 1.8
+}
+
+.contact .info P:nth-of-type(2) {
+    margin-top: 40px;
+    text-transform: uppercase
+}
+
+.contact .info p strong {
+    color: #d1d6da
+}
+
+.contact .form {
+    width: 45%;
+    margin-top: 100px;
+    margin-bottom: 60px
+}
+
+.contact .form label {
+    display: block;
+    text-transform: capitalize;
+    color: #d1d6da;
+    margin-bottom: 10px
+}
+
+.contact .form .form-input {
+    padding-bottom: 12px
+}
+
+.contact .form .form-input input[type="text"] {
+    background-color: #4b5557;
+    border: none;
+    color: #fff;
+    padding: 7px;
+    width: 70%
+}
+
+.contact .form .form-input input[type="password"] {
+    background-color: #4b5557;
+    border: none;
+    color: #fff;
+    padding: 7px;
+    width: 70%
+}
+
+.contact .form .form-input input[type="phone"] {
+    background-color: #4b5557;
+    border: none;
+    color: #fff;
+    padding: 7px;
+    width: 70%
+}
+
+.contact .form .form-input textarea[type="textarea"] {
+    background-color: #4b5557;
+    border: none;
+    color: #fff;
+    padding: 7px;
+    min-width: 70%;
+    min-height: 200px;
+    max-height: 200px;
+}
+
+.contact .form input[type="submit"] {
+    background-color: #191e22;
+    color: #fff;
+    border: none;
+    padding: 15px 20px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+/*End Contact me*/
+
+/*Start Footer*/
+
+footer {
+    text-align: center;
+    background-color: #191e22;
+    color: #6a6e71;
+    padding: 20px 0;
+}
+
+footer span {
+    text-transform: capitalize;
+    display: block
+}
+
+footer .contener ul {
+    align-items: center;
+    padding-left: 0
+}
+
+footer .contener ul li {
+    display: inline-block
+}
+
+footer .contener ul li img {
+    background-color: #252F31;
+    cursor: pointer;
+}
+
+#contactMe{
+    background-color: #2d363d;
+    color: #2ecc71;
+    border: none;
+    padding: 15px 20px;
+    text-transform: capitalize;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 20px;
+}
+
+/*End Footer*/
